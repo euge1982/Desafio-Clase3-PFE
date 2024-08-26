@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Registro By Euge Mora</title>
+    <link rel="stylesheet" href="./public/style.css">
+</head>
+<body>
+    
+    <!--Contenedor del formulario-->
+    <div class="form-container">
+
+        <!--Contenedor que se va a deslizar-->
+        <div class="form-wrapper">
+
+            <!--Contenedor del formulario de Login-->
+            <div class="login-form">
+                <h2>Ingresar</h2>
+                <!--Formulario de Login-->
+                <form id="login-form">
+                    <!--Campo de Email-->
+                    <input type="email" id="login-email" placeholder="Ingresa tu email" required>
+                    <!--Campo de Contraseña-->
+                    <input type="password" id="login-password" placeholder="Ingresa tu contraseña" required>
+                    <!--Boton de Ingresar-->
+                    <button type="submit">Ingresar</button>
+                </form>
+            </div>
+          
+            <!--Boton de Registro-->
+            <div class="form-toggle register-toggle">
+                <p class="switch-form">Aún no tienes una cuenta?</p>
+                <button id="register-button">Registrate</button>
+            </div>
+
+            <!--Contenedor del formulario de Registro-->
+            <div class="register-form">
+                <h2>Registrarse</h2>
+                <!--Formulario de Registro-->
+                <form id="register-form">
+                    <!--Campo de email-->
+                    <input type="email" id="register-email" placeholder="Ingresa tu email" required>
+                    <!--Campo de contraseña-->
+                    <input type="password" id="register-password" placeholder="Ingresa tu contraseña" required>
+                    <!--Campo de confirmacion de ontraseña-->
+                    <input type="password" id="register-confirm-password" placeholder="Confirma tu contraseña" required>
+                    <!--Boton de Registro-->
+                    <button type="submit">Registrarse</button>
+                </form>
+            </div>
+
+            <!--Boton de Login-->
+            <div class="form-toggle login-toggle">
+                <p class="switch-form">Ya tienes cuenta?</p>
+                <button id="login-button">Ingresar</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Enlaza al script que da la "funcionalidad", las comillas son porque no lo logre-->
+    <script src="./public/script.js"></script>
+</body>
+</html>
